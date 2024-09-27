@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #e7e0e0;
+    background-color: #1f1f1f;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+header {
+    background-color: #272729;
+    text-align: center;
+    padding: 40px 0;
+    color: white;
+}
+
+.logo h1 {
+    font-size: 50px;
+    margin: 5px;
+    color: rgb(140, 0, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 1;
+    position: relative;
+}
+
+.logo p {
+    font-size: 20px;
+    margin: 5px;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 1;
+    position: relative;
+}
+
+.logo img {
+    position: absolute;
+    top: 20px; /* Ajusta la posición vertical */
+    left: 50%; /* Centra horizontalmente el logo */
+    transform: translateX(-50%); /* Para que esté centrado completamente */
+    width: 200px; /* Ajusta el tamaño del logo según necesites */
+    height: 200px;
+    border-radius: 50%; /* Hace que el logo sea circular */
+    opacity: 0.4; /* Al 80% de visibilidad */
+    z-index: 0; /* Hace que el logo esté detrás del título */
+}
+
+nav ul {
+    z-index: 1;
+    position: relative;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #e1c5fc; /* Cambia solo el color del texto */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #00b7ff; /* Cambia el color al pasar el mouse */
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color:  #1b1b1b;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #5478ee;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color:#e1c5fc;
+    margin-bottom: 10px;
+}
+.serv  {
+    text-align: center;
+    
+}
+
+.serv img {
+    display: inline-block;
+    max-width: 100%; /* Ajusta según necesites */
+    height: 300px;
+    border-radius: 50%;
+}
+
+article {
+    margin-bottom: 0px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
