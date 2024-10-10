@@ -1,0 +1,43 @@
+.slider-container {
+    display: flex;
+    justify-content: center; /* Centra el slider dentro del contenedor */
+    margin-top: 20px; /* Añadir un margen superior para separación */
+}
+
+.slider {
+    background-image: url(1.jpg);
+    background-size: cover;
+    background-position: center; /* Centra la imagen dentro del contenedor */
+    height: 600px; /* Puedes ajustar el alto del slider según lo necesites */
+    width: 50%; /* Ajusta el ancho del slider */
+    border-radius: 10px;
+    animation: animate 10s infinite;
+}
+
+@keyframes animate {
+    20% {
+        background-image: url(5.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    40% {
+        background-image: url(4.png);
+        background-size: cover;
+        background-position: center;
+    }
+    60% {
+        background-image: url(3.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    80% {
+        background-image: url(2.png);
+        background-size: cover;
+        background-position: center;
+    }
+    100% {
+        background-image: url(1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}

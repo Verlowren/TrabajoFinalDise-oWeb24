@@ -1,62 +1,44 @@
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos generales */
 body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #e7e0e0;
-    background-color: #1f1f1f;
-    line-height: 1.6;
-    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #101820;
+    color: #d1e8e2;
+    font-size: 25px;
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
 }
 
 header {
-    background-color: #272729;
+    background-color: #0a0c10;
     text-align: center;
-    padding: 40px 0;
-    color: white;
+    padding: 20px 0;
 }
 
-.logo h1 {
-    font-size: 50px;
-    margin: 5px;
-    color: rgb(140, 0, 255);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    z-index: 1;
-    position: relative;
+header h1 {
+    color: #51b5d4;
+    font-size: 40px;
 }
 
-.logo p {
-    font-size: 20px;
-    margin: 5px;
-    color: rgb(255, 255, 255);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    z-index: 1;
-    position: relative;
-}
-
-.logo img {
-    position: absolute;
-    top: 20px; /* Ajusta la posición vertical */
-    left: 50%; /* Centra horizontalmente el logo */
-    transform: translateX(-50%); /* Para que esté centrado completamente */
-    width: 200px; /* Ajusta el tamaño del logo según necesites */
-    height: 200px;
-    border-radius: 50%; /* Hace que el logo sea circular */
-    opacity: 0.4; /* Al 80% de visibilidad */
-    z-index: 0; /* Hace que el logo esté detrás del título */
+header p {
+    color: #f7c331;
+    margin: 10px 0;
 }
 
 nav ul {
-    z-index: 1;
-    position: relative;
-    list-style-type: none;
+    list-style: none;
     display: flex;
     justify-content: center;
-    padding: 0;
+    margin-top: 10px;
 }
 
 nav ul li {
@@ -64,53 +46,114 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #e1c5fc; /* Cambia solo el color del texto */
+    color: #51b5d4;
     text-decoration: none;
-    font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #00b7ff; /* Cambia el color al pasar el mouse */
+    color: #f7c331;
 }
 
-/* Secciones */
 section {
-    padding: 20px;
-    margin: 20px 0;
-    background-color:  #1b1b1b;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px 0;
+    background-color: #15191c;
 }
 
-h1 {
-    color: #5478ee;
-    margin-bottom: 10px;
-}
-
-h3 {
-    color:#e1c5fc;
-    margin-bottom: 10px;
-}
-.serv  {
+h2 {
+    color: #51b5d4;
     text-align: center;
-    
+    margin-bottom: 20px;
 }
 
-.serv img {
-    display: inline-block;
-    max-width: 100%; /* Ajusta según necesites */
-    height: 300px;
-    border-radius: 50%;
+p {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-article {
-    margin-bottom: 0px;
+/* Sección Servicios */
+.servicio {
+    text-align: center;
+    margin: 20px auto; 
+    max-width: 600px;
 }
 
-img {
-    max-width: 100%;
+.servicio img {
+    width: 100%;
+    max-width: auto;
     height: auto;
-    display: block;
-    margin: 10px 0;
+    border-radius: 10px;
+    margin-bottom: 10px; 
 }
 
+/* Sección Contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, textarea, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #51b5d4;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f7c331;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #0a0c10;
+    padding: 20px;
+    color: white;
+}
+
+.redes-sociales a {
+    color: #51b5d4;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.redes-sociales a:hover {
+    color: #f7c331;
+}
+
+.mas-info {
+    display: inline-block;
+    margin-top: 10px;
+    color: #51b5d4;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.mas-info:hover {
+    color: #f7c331; /* Color cuando se pasa el mouse */
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .servicio {
+        max-width: 100%;
+        padding: 20px;
+    }
+}
